@@ -1,0 +1,9 @@
+# M4: 4-bit + Adapter
+name: "4bit_adapter"
+model_id: "meta-llama/Meta-Llama-3-8B-Instruct"
+load_in_8bit: false
+load_in_4bit: true
+compute_dtype: "bfloat16"
+quant_type: "nf4"
+use_double_quant: true
+adapter_path: "results/adapters/m4_swedish" # Assumes pre-trained

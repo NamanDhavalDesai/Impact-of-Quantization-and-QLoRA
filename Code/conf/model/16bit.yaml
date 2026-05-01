@@ -1,0 +1,6 @@
+# M1: 16-bit
+name: "16bit"
+model_id: "meta-llama/Meta-Llama-3-8B-Instruct"
+load_in_8bit: false
+load_in_4bit: false
+compute_dtype: "bfloat16"

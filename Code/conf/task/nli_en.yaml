@@ -1,0 +1,11 @@
+name: "nli_en"
+dataset_id: "glue"
+subset: "mnli"
+split: "validation_matched"
+text_cols: ["premise", "hypothesis"]
+label_col: "label"
+label_mapping: {0: "Entailment", 1: "Neutral", 2: "Contradiction"}
+eval_label_order: ["Entailment", "Neutral", "Contradiction"]
+output_type: "3-class"
+num_labels: 3
+prompt_template: "Given the premise, does the hypothesis follow (Entailment), contradict (Contradiction), or is unrelated (Neutral)?"

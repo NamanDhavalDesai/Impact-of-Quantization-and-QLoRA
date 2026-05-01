@@ -1,0 +1,8 @@
+# M3: 4-bit
+name: "4bit"
+model_id: "meta-llama/Meta-Llama-3-8B-Instruct"
+load_in_8bit: false
+load_in_4bit: true
+compute_dtype: "bfloat16"
+quant_type: "nf4"
+use_double_quant: true

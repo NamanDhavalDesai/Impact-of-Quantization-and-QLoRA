@@ -1,0 +1,11 @@
+name: "nli_sv"
+dataset_id: "sbx/superlim-2"
+subset: "swenli"
+split: "dev"  # dev split has labels
+text_cols: ["premise", "hypothesis"]
+label_col: "label"
+label_mapping: {0: "Entailment", 1: "Contradiction", 2: "Neutral"}  
+eval_label_order: ["Entailment", "Neutral", "Contradiction"]
+output_type: "3-class"
+num_labels: 3
+prompt_template: "Given the premise, does the hypothesis follow (Entailment), contradict (Contradiction), or is unrelated (Neutral)?"

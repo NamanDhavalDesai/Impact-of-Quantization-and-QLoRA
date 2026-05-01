@@ -1,0 +1,11 @@
+name: "wic_en"
+dataset_id: "super_glue"
+subset: "wic"
+split: "validation"
+text_cols: ["word", "sentence1", "sentence2"]
+label_col: "label"
+label_mapping: {0: "False", 1: "True"}
+eval_label_order: ["False", "True"]
+output_type: "binary"
+num_labels: 2
+prompt_template: "Does the word have the same meaning in both sentences? Answer True or False."

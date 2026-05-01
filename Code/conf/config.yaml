@@ -1,0 +1,17 @@
+defaults:
+  - model: 16bit
+  - task: nli_en
+  - _self_
+
+output_dir: results/${now:%Y-%m-%d}/${now:%H-%M-%S}
+seed: 42
+sample_limit: 500
+few_shot_k: 3
+
+hydra:
+  run:
+    dir: ${output_dir}
+  sweep:
+    dir: results/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${model.name}/${task.name}
+
