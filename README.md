@@ -45,7 +45,7 @@ To ensure robust metrics, we used the **Outlines library** for regex-guided gene
 ## 📂 Repository Structure
 *   `code/`: Contains the full implementation pipeline (see internal `README.md` for execution details).
 *   `Report.pdf`: The full technical study.
-*   `Presentation.pdf`: Summary of the entire technical study.
+*   `Presentation.pptx`: Summary of the entire technical study.
 
 ## 🚀 Getting Started
 Refer to the `README.md` inside the `code/` directory for instructions on setting up the environment, running the quantization scripts and reproducing the QLoRA training.
